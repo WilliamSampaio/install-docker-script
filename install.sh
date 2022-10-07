@@ -23,10 +23,11 @@ apt install docker-compose -y
 # Manage Docker as a non-root user
 groupadd docker
 usermod -aG docker $USER
-newgrp docker
 
 #Configure Docker to start on boot
 systemctl enable docker.service
 systemctl enable containerd.service
+
+newgrp docker
 
 echo 'Docker and Docker-Compose Installed!'
