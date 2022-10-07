@@ -28,6 +28,6 @@ usermod -aG docker $USER
 systemctl start docker.service
 systemctl enable docker.service
 systemctl enable containerd.service
-newgrp docker
 
 echo 'Docker and Docker-Compose Installed!'
+newgrp docker
