@@ -25,9 +25,9 @@ groupadd docker
 usermod -aG docker $USER
 
 #Configure Docker to start on boot
+systemctl start docker.service
 systemctl enable docker.service
 systemctl enable containerd.service
-
 newgrp docker
 
 echo 'Docker and Docker-Compose Installed!'
