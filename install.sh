@@ -25,7 +25,7 @@ groupadd docker
 usermod -aG docker $USER
 
 #Configure Docker to start on boot
-systemctl start docker.service
+systemctl start docker
 systemctl enable docker.service
 systemctl enable containerd.service
 
