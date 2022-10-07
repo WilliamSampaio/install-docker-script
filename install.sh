@@ -18,7 +18,6 @@ echo \
 # Install Docker Engine
 apt update
 apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
-apt install docker-compose -y
 
 # Manage Docker as a non-root user
 groupadd docker
