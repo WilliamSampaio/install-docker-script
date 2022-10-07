@@ -3,3 +3,4 @@ apt purge docker-compose -y
 apt autoremove -y
 rm -rf /var/lib/docker
 rm -rf /var/lib/containerd
+rm /etc/apt/keyrings
